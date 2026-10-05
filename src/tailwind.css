@@ -22,6 +22,23 @@
 	--color-gray-850: oklch(0.27 0 0);
 	--color-gray-900: oklch(0.2 0 0);
 	--color-gray-950: oklch(0.16 0 0);
+
+	/* LaMeDuSe brand: primary #1B1464, secondary #0080E2, tertiary #01B4B6 */
+	--color-lameduse-primary: #1b1464;
+	--color-lameduse-secondary: #0080e2;
+	--color-lameduse-tertiary: #01b4b6;
+
+	--color-blue-50: #eef7ff;
+	--color-blue-100: #d9edff;
+	--color-blue-200: #bce0ff;
+	--color-blue-300: #8ecdff;
+	--color-blue-400: #4db0f3;
+	--color-blue-500: #2b97ec;
+	--color-blue-600: #0080e2;
+	--color-blue-700: #0069bd;
+	--color-blue-800: #1b3f8f;
+	--color-blue-900: #1b1464;
+	--color-blue-950: #120d45;
 }
 
 /*
