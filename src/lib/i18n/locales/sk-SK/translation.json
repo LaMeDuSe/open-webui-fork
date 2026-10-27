@@ -2031,7 +2031,7 @@
 	"settings.admin.audio.sttModel.label": "Model rozpoznávania reči na text (STT)",
 	"settings.admin.audio.sttOpenaiApiBaseUrl.label": "Základná URL adresa API",
 	"settings.admin.audio.sttOpenaiApiKey.label": "API kľúč",
-	"settings.admin.audio.sttWhisperModel.description": "Open WebUI interne používa faster-whisper.",
+	"settings.admin.audio.sttWhisperModel.description": "LaMeDuSe AI interne používa faster-whisper.",
 	"settings.admin.audio.sttWhisperModel.label": "Model rozpoznávania reči na text (STT)",
 	"settings.admin.audio.supportedMimeTypes.description": "",
 	"settings.admin.audio.supportedMimeTypes.label": "",

@@ -622,15 +622,18 @@
 			<div class="fixed m-10 z-50">
 				<div class="flex space-x-2">
 					<div class=" self-center">
-						<!-- LICENSE covers this Open WebUI sign-in logo.
-						Do not alter, remove, obscure, or replace it except as LICENSE permits:
-						https://docs.openwebui.com/license. -->
 						<img
 							id="logo"
 							crossorigin="anonymous"
-							src="{WEBUI_BASE_URL}/static/favicon.png"
-							class=" w-6 rounded-full"
-							alt=""
+							src="{WEBUI_BASE_URL}/static/lameduse-ai-logo.svg"
+							class=" h-7 w-auto dark:hidden"
+							alt="{$WEBUI_NAME} logo"
+						/>
+						<img
+							crossorigin="anonymous"
+							src="{WEBUI_BASE_URL}/static/lameduse-ai-logo-dark.svg"
+							class=" h-7 w-auto hidden dark:block"
+							alt="{$WEBUI_NAME} logo"
 						/>
 					</div>
 				</div>

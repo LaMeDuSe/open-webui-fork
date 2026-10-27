@@ -2015,7 +2015,7 @@
 	"settings.admin.audio.sttModel.label": "Model STT",
 	"settings.admin.audio.sttOpenaiApiBaseUrl.label": "URL Bază API",
 	"settings.admin.audio.sttOpenaiApiKey.label": "Cheie API",
-	"settings.admin.audio.sttWhisperModel.description": "Open WebUI folosește faster-whisper intern.",
+	"settings.admin.audio.sttWhisperModel.description": "LaMeDuSe AI folosește faster-whisper intern.",
 	"settings.admin.audio.sttWhisperModel.label": "Model STT",
 	"settings.admin.audio.supportedMimeTypes.description": "",
 	"settings.admin.audio.supportedMimeTypes.label": "",

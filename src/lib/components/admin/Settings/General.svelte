@@ -210,31 +210,18 @@
 					<div class="mt-1 flex flex-wrap gap-x-3 gap-y-1 text-gray-400 dark:text-gray-600">
 						<a
 							class="hover:text-gray-700 dark:hover:text-gray-300"
-							href="https://discord.gg/5rJgQTnV4s"
-							target="_blank">Discord</a
-						>
-						<a
-							class="hover:text-gray-700 dark:hover:text-gray-300"
-							href="https://twitter.com/OpenWebUI"
-							target="_blank">X</a
-						>
-						<a
-							class="hover:text-gray-700 dark:hover:text-gray-300"
-							href="https://github.com/open-webui/open-webui"
-							target="_blank">GitHub</a
+							href="https://lamedusegroup.com"
+							target="_blank">LaMeDuSe</a
 						>
 					</div>
 				</div>
 
-				<div class="text-xs">
-					<!-- LICENSE covers this Open WebUI license attribution.
-					Do not alter, remove, obscure, or replace it except as LICENSE permits:
-					https://docs.openwebui.com/license. -->
-					<div class="text-gray-600 dark:text-gray-400">
-						{$i18n.t('settings.admin.general.license.label')}
-					</div>
+				{#if $config?.license_metadata}
+					<div class="text-xs">
+						<div class="text-gray-600 dark:text-gray-400">
+							{$i18n.t('settings.admin.general.license.label')}
+						</div>
 
-					{#if $config?.license_metadata}
 						<a
 							href="https://docs.openwebui.com/enterprise"
 							target="_blank"
@@ -257,18 +244,8 @@
 								{@html DOMPurify.sanitize($config?.license_metadata?.html)}
 							</div>
 						{/if}
-					{:else}
-						<a
-							class="mt-0.5 block text-gray-400 transition-colors hover:text-gray-700 dark:text-gray-600 dark:hover:text-gray-300"
-							href="https://docs.openwebui.com/enterprise"
-							target="_blank"
-						>
-							{$i18n.t(
-								'Upgrade to a licensed plan for enhanced capabilities, including custom theming and branding, and dedicated support.'
-							)}
-						</a>
-					{/if}
-				</div>
+					</div>
+				{/if}
 			</AdminSettingSection>
 
 			<AdminSettingSection title={$i18n.t('settings.admin.general.sections.features.title')}>

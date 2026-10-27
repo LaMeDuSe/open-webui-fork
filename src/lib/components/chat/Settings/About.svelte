@@ -123,9 +123,7 @@
 				Do not alter, remove, obscure, or replace it except as LICENSE permits:
 				https://docs.openwebui.com/license. -->
 				<div class="text-xs text-gray-600 dark:text-gray-400">
-					{#if !$WEBUI_NAME.includes('Open WebUI')}
-						<span>{$WEBUI_NAME}</span> -
-					{/if}
+					<span>{$WEBUI_NAME}</span> -
 
 					<span class="capitalize">{$config?.license_metadata?.type}</span>
 					{$i18n.t('license purchased by')}
@@ -135,18 +133,8 @@
 				<div class="flex flex-wrap gap-x-3 gap-y-1 text-xs text-gray-400 dark:text-gray-600">
 					<a
 						class="hover:text-gray-700 dark:hover:text-gray-400"
-						href="https://discord.gg/5rJgQTnV4s"
-						target="_blank">Discord</a
-					>
-					<a
-						class="hover:text-gray-700 dark:hover:text-gray-400"
-						href="https://twitter.com/OpenWebUI"
-						target="_blank">X</a
-					>
-					<a
-						class="hover:text-gray-700 dark:hover:text-gray-400"
-						href="https://github.com/open-webui/open-webui"
-						target="_blank">GitHub</a
+						href="https://lamedusegroup.com"
+						target="_blank">LaMeDuSe</a
 					>
 				</div>
 			{/if}
