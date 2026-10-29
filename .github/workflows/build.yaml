@@ -14,16 +14,13 @@ on:
 
   workflow_dispatch:
 
-concurrency:
-  group: build-${{ github.ref }}
-  cancel-in-progress: true
-
 jobs:
   build-push-docker:
     uses: lameduse/actions/.github/workflows/build-push-docker.yaml@main
     secrets: inherit
     with:
       DIRECTORIES: '["."]'
+
   status-check:
     name: Build
     runs-on: lameduse-runners
