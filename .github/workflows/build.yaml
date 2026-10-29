@@ -19,6 +19,7 @@ jobs:
     uses: lameduse/actions/.github/workflows/build-push-docker.yaml@main
     secrets: inherit
     with:
+      TARGET_DIR: public
       DIRECTORIES: '["."]'
 
   status-check:
