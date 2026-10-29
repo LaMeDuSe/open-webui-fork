@@ -198,17 +198,24 @@ soup = BeautifulSoup(html_content, 'html.parser')
 # Initialize JSON structure
 changelog_json = {}
 
+# Version headings come in two formats:
+#   upstream Keep a Changelog: "[0.11.4] - 2026-09-21"
+#   semantic-release:          "0.12.1 (2026-10-29)" (the link text of "[0.12.1](...)")
+CHANGELOG_HEADING_RE = re.compile(r'^\[?v?(\d+\.\d+\.\d+[^\]\s]*)\]?\s*(?:-\s*|\()?(\d{4}-\d{2}-\d{2})?')
+
 # Iterate over each version
-for version in soup.find_all('h2'):
-    version_number = version.get_text().strip().split(' - ')[0][1:-1]  # Remove brackets
-    date = version.get_text().strip().split(' - ')[1]
+for version in soup.find_all(['h1', 'h2']):
+    match = CHANGELOG_HEADING_RE.match(version.get_text().strip())
+    if not match:
+        continue
+    version_number, date = match.group(1), match.group(2) or ''
 
     version_data = {'date': date}
 
     # Find the next sibling that is a h3 tag (section title)
     current = version.find_next_sibling()
 
-    while current and current.name != 'h2':
+    while current and current.name not in ('h1', 'h2'):
         if current.name == 'h3':
             section_title = current.get_text().lower()  # e.g., "added", "fixed"
             section_items = parse_section(current.find_next_sibling('ul'))
