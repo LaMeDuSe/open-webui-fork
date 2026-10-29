@@ -23,7 +23,7 @@ jobs:
 
   status-check:
     name: Build
-    runs-on: lameduse-runners
+    runs-on: ubuntu-24.04
     needs:
       - build-push-docker
     if: success()

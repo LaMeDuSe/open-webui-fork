@@ -5,7 +5,7 @@ on:
 
 jobs:
   check_perms:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Check if Actor is a Member of one of the teams
         uses: im-open/is-actor-team-member@v1.2.1
@@ -30,7 +30,7 @@ jobs:
     needs:
       - check_perms
       - build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/setup-node@v4
         with:
