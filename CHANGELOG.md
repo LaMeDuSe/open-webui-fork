@@ -1,5 +1,12 @@
 # LaMeDuSe Change Log
 
+## [0.12.1](https://github.com/LaMeDuSe/open-webui-fork/compare/v0.12.0...v0.12.1) (2026-10-29)
+
+
+### Bug Fixes
+
+* **ci:** push Docker image to the public registry namespace ([a07e129](https://github.com/LaMeDuSe/open-webui-fork/commit/a07e129d4424f6e2720f165604bd62d00b95a9f7))
+
 # [0.12.0](https://github.com/LaMeDuSe/open-webui-fork/compare/v0.11.4...v0.12.0) (2026-10-29)
 
 
