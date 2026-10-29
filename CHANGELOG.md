@@ -1,3 +1,19 @@
+# LaMeDuSe Change Log
+
+# [0.12.0](https://github.com/LaMeDuSe/open-webui-fork/compare/v0.11.4...v0.12.0) (2026-10-29)
+
+
+### Bug Fixes
+
+* **docker:** raise Node heap limit for frontend build ([8838bd8](https://github.com/LaMeDuSe/open-webui-fork/commit/8838bd8f5eafe6eb8fb12be35a31111b93b8cf5e))
+* **docker:** raise Node heap limit to 8 GB for frontend build ([e97f4d4](https://github.com/LaMeDuSe/open-webui-fork/commit/e97f4d43f1adf5e1d2771c50101dddebe0500d84))
+* runners ([ca22361](https://github.com/LaMeDuSe/open-webui-fork/commit/ca223611fd7074b93e9d492ee237767fc18de06b))
+
+
+### Features
+
+* complete LaMeDuSe AI rebrand across the interface ([3c9bf7a](https://github.com/LaMeDuSe/open-webui-fork/commit/3c9bf7a5cbba62324a3c7e7bde0caa0bababbdfe))
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
