@@ -1,5 +1,12 @@
 # LaMeDuSe Change Log
 
+## [0.12.2](https://github.com/LaMeDuSe/open-webui-fork/compare/v0.12.1...v0.12.2) (2026-10-30)
+
+
+### Bug Fixes
+
+* parse semantic-release changelog headings at startup ([0237de2](https://github.com/LaMeDuSe/open-webui-fork/commit/0237de26668bad63e2a11d8b39505ad1de74cf23))
+
 ## [0.12.1](https://github.com/LaMeDuSe/open-webui-fork/compare/v0.12.0...v0.12.1) (2026-10-29)
 
 
